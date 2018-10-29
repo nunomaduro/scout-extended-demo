@@ -17,6 +17,7 @@
 </head>
 <body>
     <div id="app">
+        @scout(['searchable' => 'App\Article'])
         <header>
             <div class="navbar navbar-dark bg-dark shadow-sm">
                 <div class="container d-flex justify-content-between">
@@ -29,44 +30,44 @@
 
         <section class="jumbotron text-center">
             <div class="container">
-                <form action="/" method="GET">
                     <div class="input-group input-group-lg">
-                        <input type="text"
-                           name="query"
-                           class="form-control"
-                           aria-label="Sizing example input"
-                           aria-describedby="inputGroup-sizing-lg"
-                           placeholder="Search..."
-                           value="{{ $query ?? '' }}">
+
+                    <ais-input type="text"
+                       name="query"
+                       class="form-control"
+                       aria-label="Sizing example input"
+                       aria-describedby="inputGroup-sizing-lg"
+                       placeholder="Search..." />
+                   </ias-input>
                     </div>
-                </form>
             </div>
         </section>
 
         <div class="album">
             <div class="container">
-                <div class="row">
-                    @foreach ($models as $model)
+                <ais-results class="row">
+                    <template scope="{ result }">
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <p class="card-text">{{ $model->body }}</p>
+                                    <p class="card-text">@{{ result.body }}</p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <small class="text-muted"><strong>Author</strong>: {{ $model->author }}</small>
+                                        <small class="text-muted"><strong>Author</strong>: @{{ result.author }}</small>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <small class="text-muted"><strong>Image</strong>: {{ $model->image_url }}</small>
+                                        <small class="text-muted"><strong>Image</strong>: @{{ result.image_url }}</small>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <small class="text-muted"><strong>Views</strong>: {{ $model->views_count }}</small>
+                                        <small class="text-muted"><strong>Views</strong>: @{{ result.views_count }}</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    @endforeach
+                    </ais-results></template>
                 </div>
             </div>
         </div>
+        @endscout
     </div>
     <script src="/js/app.js"></script>
 </body>
