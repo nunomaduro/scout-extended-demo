@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/algolia/algoliasearch-client-php.git",
-                "reference": "ebe6dfb73514e727926620758b05c804bdaf8cb2"
+                "reference": "01d15f6758236bc39ee71806a2d46f67fe8be6f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/algolia/algoliasearch-client-php/zipball/ebe6dfb73514e727926620758b05c804bdaf8cb2",
-                "reference": "ebe6dfb73514e727926620758b05c804bdaf8cb2",
+                "url": "https://api.github.com/repos/algolia/algoliasearch-client-php/zipball/01d15f6758236bc39ee71806a2d46f67fe8be6f0",
+                "reference": "01d15f6758236bc39ee71806a2d46f67fe8be6f0",
                 "shasum": ""
             },
             "require": {
@@ -72,7 +72,7 @@
                 "php",
                 "search"
             ],
-            "time": "2018-10-17T12:21:29+00:00"
+            "time": "2018-10-30T09:41:23+00:00"
         },
         {
             "name": "algolia/scout-extended",
@@ -80,12 +80,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/algolia/scout-extended.git",
-                "reference": "210fd631b2f5a1b55f9abac4efc94e85240200ba"
+                "reference": "a28a45b83fcca93dd1da71e529345e9ce87b82e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/algolia/scout-extended/zipball/210fd631b2f5a1b55f9abac4efc94e85240200ba",
-                "reference": "210fd631b2f5a1b55f9abac4efc94e85240200ba",
+                "url": "https://api.github.com/repos/algolia/scout-extended/zipball/a28a45b83fcca93dd1da71e529345e9ce87b82e5",
+                "reference": "a28a45b83fcca93dd1da71e529345e9ce87b82e5",
                 "shasum": ""
             },
             "require": {
@@ -148,7 +148,7 @@
                 "scout",
                 "search"
             ],
-            "time": "2018-10-29T12:19:11+00:00"
+            "time": "2018-10-30T13:34:29+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3644,16 +3644,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "21ad88bbba7c3d93530d93994e0a33cd45f02ace"
+                "reference": "c99e3be9d3e85f60646f152f9002d46ed7770d18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/21ad88bbba7c3d93530d93994e0a33cd45f02ace",
-                "reference": "21ad88bbba7c3d93530d93994e0a33cd45f02ace",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c99e3be9d3e85f60646f152f9002d46ed7770d18",
+                "reference": "c99e3be9d3e85f60646f152f9002d46ed7770d18",
                 "shasum": ""
             },
             "require": {
@@ -3689,7 +3689,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2018-02-01T13:16:43+00:00"
+            "time": "2018-10-30T05:52:18+00:00"
         },
         {
             "name": "phpunit/phpunit",
