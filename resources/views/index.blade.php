@@ -45,26 +45,30 @@
 
         <div class="album">
             <div class="container">
-                <div class="row">
-                    @foreach ($models as $model)
-                        <div class="col-md-4">
+                @foreach ($models as $model)
+                    <div class="row mb-3">
+                        <div class="col-md-12">
                             <div class="card">
                                 <div class="card-body">
+                                    <span class="badge badge-secondary">{{ get_class($model) }}</span>
                                     <p class="card-text">{{ $model->body }}</p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <small class="text-muted"><strong>Author</strong>: {{ $model->author }}</small>
+                                        <small class="text-muted"><strong>Author</strong>: 👦 {{ $model->author }}</small>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <small class="text-muted"><strong>Image</strong>: {{ $model->image_url }}</small>
+                                        <small class="text-muted"><strong>Image</strong>: 🌅 {{ $model->image_url }}</small>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <small class="text-muted"><strong>Views</strong>: {{ $model->views_count }}</small>
+                                        <small class="text-muted"><strong>Likes</strong>: ❤️ {{ $model->likes_count }}</small>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted"><strong>Slug</strong>: 🆔 {{ $model->slug }}</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    @endforeach
-                </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
