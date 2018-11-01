@@ -14,6 +14,6 @@ class EventTableSeeder extends Seeder
     {
         factory(\App\Event::class, 50)->create();
 
-        factory(\App\Event::class)->create(['body' => 'This is an event']);
+        factory(\App\Event::class)->create(['title' => 'This is an event']);
     }
 }

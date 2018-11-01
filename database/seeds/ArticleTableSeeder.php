@@ -16,36 +16,36 @@ class ArticleTableSeeder extends Seeder
 
         // Stop Words feature.
         factory(\App\Article::class)->create([
-            'body' => "Install - Laracasts provides a free, thorough introduction to Laravel."
+            'title' => "Install - Laracasts provides a free, thorough introduction to Laravel."
         ]);
 
         // Custom Ranking
        factory(\App\Article::class)->create([
             'author' => "Taylor Otwell",
-            'body' => "Tutorial Laravel",
+            'title' => "Tutorial Laravel",
             'likes_count' => 9000
         ]);
 
         factory(\App\Article::class)->create([
-            'body' => "Install Laravel"
+            'title' => "Install Laravel"
         ]);
 
         factory(\App\Article::class)->create([
-            'body' => "Configurate Laravel"
+            'title' => "Configurate Laravel"
         ]);
 
         factory(\App\Article::class)->create([
-            'body' => "Start Laravel"
+            'title' => "Start Laravel"
         ]);
 
         // Plurals feature
         factory(\App\Article::class)->create([
-            'body' => "Configure model",
+            'title' => "Configure model",
             'likes_count' => 1000,
         ]);
 
         factory(\App\Article::class)->create([
-            'body' => "Configure models",
+            'title' => "Configure models",
             'likes_count' => 2000,
         ]);
     }

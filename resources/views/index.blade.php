@@ -51,7 +51,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <span class="badge badge-secondary">{{ get_class($model) }}</span>
-                                    <p class="card-text">{{ $model->body }}</p>
+                                    <p class="card-text">{{ $model->title }}</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <small class="text-muted"><strong>Author</strong>: 👦 {{ $model->author }}</small>
                                     </div>

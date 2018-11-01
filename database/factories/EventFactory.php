@@ -16,7 +16,7 @@ use Faker\Generator as Faker;
 $factory->define(App\Event::class, function (Faker $faker) {
     return [
         'image_url' => $faker->imageUrl(),
-        'body' => $faker->realText($faker->numberBetween(100,150)),
+        'title' => $faker->realText($faker->numberBetween(10,20)),
         'author' => $faker->name,
         'likes_count' => $faker->randomNumber(3),
         'slug' => $faker->slug
