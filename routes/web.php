@@ -16,7 +16,7 @@ use App\Article;
 Route::get('/', function () {
     $query = (string) request('query');
 
-    $models = \App\Article::search($query)->get();
+    $models = Article::search($query)->get();
 
     return view('index', compact('models', 'query'));
 });
